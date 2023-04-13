@@ -93,7 +93,7 @@ function WordCounter() {
         <div>
           <button
             onClick={() => {
-              setAll(all.toUpperCase());
+              setAll(all.toLowerCase());
             }}
           >
             Click To Lowercase
