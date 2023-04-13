@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function WordCounter() {
-  const [all, setAll] = useState();
+  const [all, setAll] = useState("");
   const [countWord, setCountWord] = useState(0);
   const [countLetter, setCountLetter] = useState(0);
   const [countParagraph, setCountParagraph] = useState(0);
@@ -22,6 +22,10 @@ function WordCounter() {
     } else {
       setCountParagraph(e.target.value.split(/\r?\n|\r/).length);
     }
+  };
+
+  const handleAll = (e) => {
+    setAll(e.target.value);
   };
 
   return (
@@ -68,6 +72,7 @@ function WordCounter() {
             handleWord(e);
             handleLetter(e);
             handleParagraph(e);
+            handleAll(e);
           }}
           placeholder="Enter/Paste Your Text Here"
           cols="105"
