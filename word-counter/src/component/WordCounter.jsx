@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function WordCounter() {
-  const [all, setAll] = useState("");
+  const [all, setAll] = useState();
   const [countWord, setCountWord] = useState(0);
   const [countLetter, setCountLetter] = useState(0);
   const [countParagraph, setCountParagraph] = useState(0);
