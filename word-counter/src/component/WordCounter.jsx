@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function WordCounter() {
-  const [all, setAll] = useState();
+  const [all, setAll] = useState("");
   const [countWord, setCountWord] = useState(0);
   const [countLetter, setCountLetter] = useState(0);
   const [countParagraph, setCountParagraph] = useState(0);
@@ -22,10 +22,6 @@ function WordCounter() {
     } else {
       setCountParagraph(e.target.value.split(/\r?\n|\r/).length);
     }
-  };
-
-  const handleUpCase = (e) => {
-    setAll(e.target.value.toUpperCase());
   };
 
   return (
@@ -81,7 +77,13 @@ function WordCounter() {
       </div>
       <div className="container">
         <div>
-          <button onClick={(e) => handleUpCase(e)}>Click To Uppercase</button>
+          <button
+            onClick={() => {
+              setAll(all.toUpperCase());
+            }}
+          >
+            Click To Uppercase
+          </button>
         </div>
         <div>
           <button>Click To Lowercase</button>
