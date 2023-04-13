@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(to right, #d3c1dd 0%, #ffb1d3 67%, #ffb1c0 100%);
+}
+
+img {
+  width: 15px;
+  height: 15px;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 3px rgb(48, 148, 210) solid;
+  padding: 20px;
+  font-size: larger;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.App {
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
+
+.logo {
+  width: 30px;
+  height: 30px;
+  color: white;
+  background: linear-gradient(to bottom, #ffffff 0%, #64a0cb 27%, #475f75 100%);
+  padding: 5px;
+  border: 2px solid rgba(6, 79, 124, 0.786);
+  border-radius: 10px;
+  word-wrap: break-word;
+  line-height: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 40px;
+}
+
+.logo-container .word {
+  font-family: "BioRhyme";
+  font-style: italic;
+  font-size: 40px;
+  color: purple;
+  padding-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.result {
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(45deg, #771a83 0%, #9413b9 37%, #e74ac1 100%);
+  border-radius: 12px;
+  box-shadow: 2px 5px 9px 0px rgba(0, 0, 0, 0.91);
+  margin-bottom: 50px;
+}
+
+.result .result-word {
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+}
